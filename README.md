@@ -88,3 +88,6 @@ scss/
 ## Author
 
 Alejandro Escobar
+
+<img width="1349" height="631" alt="{96440AD9-F4DD-40F3-9AE2-6308C06BC572}" src="https://github.com/user-attachments/assets/5daf310d-3d19-4651-a3ed-c8eb1aa22876" />
+
