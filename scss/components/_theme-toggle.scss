@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.theme-toggle {
+  width: 46px;
+  height: 46px;
+  margin-left: auto;
+
+  display: inline-grid;
+  place-content: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  background: var(--color-bg);
+  color: var(--color-primary-strong);
+
+  font: inherit;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: var(--color-surface);
+  }
+
+  @include mobile {
+    margin-left: 0;
+  }
+
+  &__icon {
+    line-height: 1;
+  }
+}

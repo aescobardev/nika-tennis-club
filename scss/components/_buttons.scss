@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as *;
+
+button,
+.button-link {
+  display: inline-block;
+  border: none;
+  background: $color-button;
+  color: #ffffff !important;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-button-hover;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $color-focus;
+    outline-offset: 3px;
+  }
+}

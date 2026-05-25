@@ -1,0 +1,86 @@
+@use "../abstracts/variables" as *;
+
+.form-alert {
+  display: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: 700;
+
+  &--success {
+    display: block;
+    color: #12401e;
+    background: #dff2d8;
+    border: 1px solid #9cc89a;
+  }
+
+  &--error {
+    display: block;
+    color: #7f1d1d;
+    background: #fce7e7;
+    border: 1px solid #ef9a9a;
+  }
+}
+
+.club-form {
+  display: grid;
+  gap: 1.25rem;
+
+  &__group {
+    margin: 0;
+    border: 1px solid var(--color-border);
+    border-radius: $radius-sm;
+    padding: 1rem;
+    background: #ffffff;
+  }
+
+  &__field {
+    display: grid;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.is-valid {
+      input,
+      select,
+      textarea {
+        border-color: #15803d;
+      }
+
+      .club-form__message {
+        color: #15803d;
+      }
+    }
+
+    &.is-invalid {
+      input,
+      select,
+      textarea {
+        border-color: #b91c1c;
+      }
+
+      .club-form__message {
+        color: #b91c1c;
+      }
+    }
+  }
+
+  &__message {
+    min-height: 1.2rem;
+    font-size: 0.9rem;
+    color: $color-text-soft;
+
+    &--counter {
+      text-align: right;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Formulario de registro del Club de Tenis NIKA."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="img/Slogan-Personal.png" type="image/x-icon"/>
+    <title>Club de Tenis NIKA | Registro</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal"
+      >Saltar al contenido principal</a
+    >
+
+    <header class="site-header" role="banner">
+      <div class="site-header__top">
+        <img
+          class="site-header__logo"
+          src="img/Slogan-Personal.png"
+          alt="Logotipo del Club de Tenis NIKA"
+        />
+
+        <div class="site-header__brand">
+          <p class="site-header__eyebrow">Club deportivo</p>
+          <h1>Club de Tenis NIKA</h1>
+          <p class="site-header__tagline">
+            Entrena, compite y disfruta el tenis con propósito.
+          </p>
+        </div>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Cambiar a modo oscuro"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle__icon">☾</span>
+        </button>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="main-menu" aria-label="Navegación principal">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="instalaciones.html">Instalaciones</a></li>
+          <li><a href="informacion.html">Información</a></li>
+          <li><a href="membresias.html">Membresías</a></li>
+          <li><a href="correo.html" target="_blank">Correo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido-principal" class="page-main">
+      <section class="form-section" aria-labelledby="registro-title">
+        <div class="form-section__intro">
+          <h2 id="registro-title">Formulario de registro</h2>
+          <p>
+            Completa tus datos para solicitar información sobre clases y uso de
+            instalaciones.
+          </p>
+
+          <figure class="form-section__figure">
+            <img
+              src="img/mujer-entrenando.jpg"
+              alt="Mujer entrenando tenis en una cancha del club"
+            />
+            <figcaption>Entrenamiento en nuestras instalaciones.</figcaption>
+          </figure>
+        </div>
+
+        <form class="club-form" action="#" method="post" role="form" novalidate>
+          <div class="form-alert" id="form-alert" aria-live="polite"></div>
+
+          <fieldset class="club-form__group">
+            <legend>Datos personales</legend>
+
+            <div class="club-form__field">
+              <label for="nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                minlength="3"
+                placeholder="Escribe tu nombre completo"
+                data-error="El nombre debe tener al menos 3 caracteres."
+              />
+              <small class="club-form__message"></small>
+            </div>
+
+            <div class="club-form__field">
+              <label for="fecha-nacimiento">Fecha de nacimiento</label>
+              <input
+                type="date"
+                id="fecha-nacimiento"
+                name="fecha_nacimiento"
+                required
+                data-error="Selecciona una fecha de nacimiento válida."
+              />
+              <small class="club-form__message"></small>
+            </div>
+
+            <div class="club-form__field">
+              <label for="genero">Género</label>
+              <select
+                id="genero"
+                name="genero"
+                required
+                data-error="Selecciona una opción de género."
+              >
+                <option value="">-- Selecciona una opción --</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otro">Otro</option>
+                <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+              </select>
+              <small class="club-form__message"></small>
+            </div>
+
+            <div class="club-form__field">
+              <label for="pais">País</label>
+              <input
+                type="text"
+                id="pais"
+                name="pais"
+                required
+                minlength="3"
+                placeholder="Escribe tu país"
+                data-error="El país debe tener al menos 3 caracteres."
+              />
+              <small class="club-form__message"></small>
+            </div>
+
+            <div class="club-form__field">
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="correo@ejemplo.com"
+                data-error="Ingresa un correo electrónico válido."
+              />
+              <small class="club-form__message"></small>
+            </div>
+
+            <div class="club-form__field">
+              <label for="telefono">Número telefónico</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                pattern="[0-9]{10}"
+                maxlength="10"
+                placeholder="5512345678"
+                data-error="El teléfono debe tener exactamente 10 números."
+              />
+              <small class="club-form__message"></small>
+            </div>
+          </fieldset>
+
+          <fieldset class="club-form__group">
+            <legend>Preferencias de clase</legend>
+
+            <div class="club-form__field">
+              <label for="categoria">Categoría</label>
+              <select
+                id="categoria"
+                name="categoria"
+                required
+                data-error="Selecciona una categoría."
+              >
+                <option value="">-- Selecciona una opción --</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="mixto">Mixto</option>
+              </select>
+              <small class="club-form__message"></small>
+            </div>
+
+            <div class="club-form__field">
+              <label for="juego">Tipo de juego</label>
+              <select
+                id="juego"
+                name="juego"
+                required
+                data-error="Selecciona el tipo de juego."
+              >
+                <option value="">-- Selecciona una opción --</option>
+                <option value="individual">Individual</option>
+                <option value="dobles">Dobles</option>
+              </select>
+              <small class="club-form__message"></small>
+            </div>
+
+            <div class="club-form__field">
+              <label for="indicaciones">Indicaciones especiales</label>
+              <textarea
+                id="indicaciones"
+                name="indicaciones"
+                rows="4"
+                maxlength="180"
+                placeholder="Escribe aquí cualquier indicación adicional"
+              ></textarea>
+              <small class="club-form__message club-form__message--counter">
+                0 / 180 caracteres
+              </small>
+            </div>
+          </fieldset>
+
+          <fieldset class="club-form__group">
+            <legend>Tipo de cancha</legend>
+
+            <div class="club-form__field">
+              <label for="cancha">Superficie de cancha</label>
+              <select
+                id="cancha"
+                name="cancha"
+                required
+                data-error="Selecciona una superficie de cancha."
+              >
+                <option value="">-- Selecciona una opción --</option>
+                <option value="cesped">Césped</option>
+                <option value="arcilla">Arcilla</option>
+                <option value="dura">Dura</option>
+                <option value="moqueta">Moqueta</option>
+              </select>
+              <small class="club-form__message"></small>
+            </div>
+          </fieldset>
+
+          <div class="club-form__actions">
+            <button type="submit">Enviar solicitud</button>
+            <button class="button-link button-link--secondary" type="reset">
+              Limpiar formulario
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+     <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <img
+            src="img/Slogan-Personal.png"
+            alt="Logotipo del Club de Tenis NIKA"
+          />
+          <div>
+            <h2>Club de Tenis NIKA</h2>
+            <p>Entrena, compite y disfruta el tenis con propósito.</p>
+          </div>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Enlaces</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="instalaciones.html">Instalaciones</a></li>
+            <li><a href="informacion.html">Información</a></li>
+            <li><a href="membresias.html">Membresías</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Contacto</h3>
+          <ul>
+            <li>Tel. +52 55 1234 5678</li>
+            <li>contacto@clubnika.com</li>
+            <li>Las Lomas, Ciudad de México</li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Horarios</h3>
+          <ul>
+            <li>Lun - Vie: 06:00 - 22:00</li>
+            <li>Sábado: 07:00 - 17:00</li>
+            <li>Domingo: 07:00 - 15:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Club de Tenis NIKA. Todos los derechos reservados.</p>
+        <a href="correo.html">Ver plantilla de correo</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+@use "./variables" as *;
+
+@mixin container {
+  width: min(100% - 2rem, $container);
+  margin-inline: auto;
+}
+
+@mixin card-style {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius;
+  box-shadow: $shadow-soft;
+}
+
+@mixin mobile {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}

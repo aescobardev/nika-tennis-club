@@ -1,0 +1,112 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.site-footer {
+  @include container;
+
+  margin-top: 2rem;
+  padding: 2rem 0;
+
+  color: $color-text-soft;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    gap: 2rem;
+
+    padding: 2rem;
+
+    background: $color-primary-strong;
+    border-radius: $radius;
+    box-shadow: $shadow-soft;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+
+    img {
+      width: 72px;
+      border-radius: 999px;
+      background: #ffffff;
+    }
+
+    h2 {
+      margin: 0 0 0.5rem;
+      color: #ffffff;
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 0;
+      color: #dff2d8;
+    }
+  }
+
+  &__column {
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    ul {
+      display: grid;
+      gap: 0.5rem;
+
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    li {
+      color: #dff2d8;
+    }
+
+    a {
+      color: #dff2d8;
+      text-decoration: none;
+
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      &:visited {
+        color: #dff2d8;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 1rem 0 0;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: $color-primary-strong;
+      font-weight: 700;
+    }
+  }
+}

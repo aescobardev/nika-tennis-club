@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Conoce las instalaciones del Club de Tenis NIKA: canchas profesionales, lobby, tienda deportiva y espacios de entrenamiento."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="img/Slogan-Personal.png" type="image/x-icon"/>
+    <title>Club de Tenis NIKA | Instalaciones</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal"
+      >Saltar al contenido principal</a
+    >
+
+    <header class="site-header" role="banner">
+      <div class="site-header__top">
+        <img
+          class="site-header__logo"
+          src="img/Slogan-Personal.png"
+          alt="Logotipo del Club de Tenis NIKA"
+        />
+
+        <div class="site-header__brand">
+          <p class="site-header__eyebrow">Club deportivo</p>
+          <h1>Club de Tenis NIKA</h1>
+          <p class="site-header__tagline">
+            Entrena, compite y disfruta el tenis con propósito.
+          </p>
+        </div>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Cambiar a modo oscuro"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle__icon">☾</span>
+        </button>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="main-menu" aria-label="Navegación principal">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li>
+            <a aria-current="page" href="instalaciones.html">Instalaciones</a>
+          </li>
+          <li><a href="informacion.html">Información</a></li>
+          <li><a href="membresias.html">Membresías</a></li>
+          <li><a href="correo.html" target="_blank">Correo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido-principal" class="page-main">
+      <section
+        class="facilities-hero reveal"
+        aria-labelledby="facilities-title"
+      >
+        <div class="facilities-hero__content">
+          <p class="section-eyebrow">Instalaciones</p>
+          <h2 id="facilities-title">Conoce nuestros espacios deportivos</h2>
+          <p>
+            En Club de Tenis NIKA contamos con áreas pensadas para
+            entrenamiento, convivencia, descanso y preparación deportiva.
+          </p>
+          <a class="button-link" href="registro.html">Solicitar información</a>
+        </div>
+
+        <div class="facilities-hero__media">
+          <img
+            src="img/canchas_cerradas.webp"
+            alt="Cancha techada del Club de Tenis NIKA"
+          />
+        </div>
+      </section>
+
+      <section
+        class="facilities-gallery reveal"
+        aria-labelledby="gallery-title"
+      >
+        <h2 id="gallery-title">Galería de instalaciones</h2>
+
+        <div class="facilities-gallery__grid">
+          <article class="facility-card">
+            <img
+              src="img/canchas_cerradas.webp"
+              alt="Cancha techada con marcador del club"
+            />
+            <div class="facility-card__body">
+              <h3>Canchas techadas</h3>
+              <p>
+                Espacios protegidos para entrenar con mayor comodidad durante
+                todo el año.
+              </p>
+            </div>
+          </article>
+
+          <article class="facility-card">
+            <img
+              src="img/canchas_dobles.webp"
+              alt="Canchas dobles vistas desde arriba"
+            />
+            <div class="facility-card__body">
+              <h3>Canchas dobles</h3>
+              <p>
+                Áreas amplias para partidos individuales, dobles y
+                entrenamientos grupales.
+              </p>
+            </div>
+          </article>
+
+          <article class="facility-card">
+            <img src="img/lobby.webp" alt="Lobby y área de descanso del club" />
+            <div class="facility-card__body">
+              <h3>Lobby y descanso</h3>
+              <p>
+                Zona cómoda para relajarte antes o después de tus actividades
+                deportivas.
+              </p>
+            </div>
+          </article>
+
+          <article class="facility-card">
+            <img
+              src="img/tienda.webp"
+              alt="Tienda deportiva con raquetas y accesorios"
+            />
+            <div class="facility-card__body">
+              <h3>Tienda deportiva</h3>
+              <p>
+                Accesorios, raquetas y equipo especializado para mejorar tu
+                experiencia de juego.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="facility-services reveal"
+        aria-labelledby="services-title"
+      >
+        <h2 id="services-title">Servicios disponibles</h2>
+
+        <div class="facility-services__grid">
+          <article class="card">
+            <h3>Reservación de canchas</h3>
+            <p>
+              Organiza tus horarios de entrenamiento y partidos con reservación
+              previa.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Clases por nivel</h3>
+            <p>
+              Entrenamientos para principiantes, intermedios y jugadores
+              avanzados.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Academia infantil</h3>
+            <p>
+              Programas para niñas y niños enfocados en técnica, disciplina y
+              diversión.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="facility-rules reveal" aria-labelledby="rules-title">
+        <div>
+          <p class="section-eyebrow">Reglamento</p>
+          <h2 id="rules-title">Reglas básicas de uso</h2>
+          <p>
+            Para mantener una experiencia segura y ordenada, todos los
+            visitantes deben seguir las normas generales del club.
+          </p>
+        </div>
+
+        <ul class="facility-rules__list">
+          <li>Usar calzado deportivo adecuado dentro de las canchas.</li>
+          <li>Respetar los horarios de reservación.</li>
+          <li>Mantener limpias las áreas comunes.</li>
+          <li>
+            Evitar ingresar alimentos o bebidas no permitidas a las canchas.
+          </li>
+          <li>Seguir las indicaciones del personal del club.</li>
+        </ul>
+      </section>
+
+      <section class="cta-section reveal" aria-labelledby="cta-title">
+        <h2 id="cta-title">¿Quieres conocer nuestras instalaciones?</h2>
+        <p>
+          Regístrate y recibe más información sobre horarios, clases y
+          disponibilidad de canchas.
+        </p>
+        <a class="button-link" href="registro.html">Ir al registro</a>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <img
+            src="img/Slogan-Personal.png"
+            alt="Logotipo del Club de Tenis NIKA"
+          />
+          <div>
+            <h2>Club de Tenis NIKA</h2>
+            <p>Entrena, compite y disfruta el tenis con propósito.</p>
+          </div>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Enlaces</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="instalaciones.html">Instalaciones</a></li>
+            <li><a href="informacion.html">Información</a></li>
+            <li><a href="membresias.html">Membresías</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Contacto</h3>
+          <ul>
+            <li>Tel. +52 55 1234 5678</li>
+            <li>contacto@clubnika.com</li>
+            <li>Las Lomas, Ciudad de México</li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Horarios</h3>
+          <ul>
+            <li>Lun - Vie: 06:00 - 22:00</li>
+            <li>Sábado: 07:00 - 17:00</li>
+            <li>Domingo: 07:00 - 15:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Club de Tenis NIKA. Todos los derechos reservados.</p>
+        <a href="correo.html">Ver plantilla de correo</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

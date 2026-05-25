@@ -1,0 +1,22 @@
+@use "../abstracts/mixins" as *;
+
+.card,
+.membership-card,
+.login-panel,
+.rules,
+.form-section,
+.gallery,
+.features,
+.history,
+.hero,
+.intro {
+  @include card-style;
+}
+
+.card {
+  padding: 1.25rem;
+
+  h3 {
+    margin-top: 0;
+  }
+}

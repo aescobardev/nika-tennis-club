@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.site-header {
+  background: #dff2d8;
+  border-bottom: 3px solid $color-primary-strong;
+
+  &__top {
+    @include container;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 0 0.75rem;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    width: 92px;
+
+    @include mobile {
+      width: 72px;
+    }
+  }
+
+  &__brand {
+    h1 {
+      margin: 0;
+      line-height: 1.1;
+      font-size: clamp(2rem, 3vw, 3rem);
+    }
+  }
+
+  &__eyebrow,
+  &__tagline {
+    margin: 0;
+    color: $color-text-soft;
+  }
+}

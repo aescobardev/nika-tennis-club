@@ -1,0 +1,21 @@
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
+
+@use "./base/reset";
+@use "./base/global";
+@use "./base/animations";
+
+@use "./components/header";
+@use "./components/nav";
+@use "./components/buttons";
+@use "./components/cards";
+@use "./components/footer";
+@use "./components/menu-toggle";
+@use "./components/forms";
+@use "./components/theme-toggle";
+
+@use "./pages/home";
+@use "./pages/instalaciones";
+@use "./pages/informacion";
+@use "./pages/membresias";
+
