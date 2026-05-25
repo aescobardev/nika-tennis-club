@@ -89,5 +89,22 @@ scss/
 
 Alejandro Escobar
 
-<img width="1349" height="631" alt="{96440AD9-F4DD-40F3-9AE2-6308C06BC572}" src="https://github.com/user-attachments/assets/5daf310d-3d19-4651-a3ed-c8eb1aa22876" />
+## Screenshots
+
+### Home Page
+
+![Home Page](<img width="1347" height="634" alt="{0AD95A1E-8A38-4CCC-86FC-1EA868D2D7E7}" src="https://github.com/user-attachments/assets/cbcc09bf-2a30-4fbe-9336-a883cf5fa83b" />)
+
+### Dark Mode
+
+![Dark Mode](<img width="1349" height="631" alt="{96440AD9-F4DD-40F3-9AE2-6308C06BC572}" src="https://github.com/user-attachments/assets/5daf310d-3d19-4651-a3ed-c8eb1aa22876" />)
+
+### Membership Modal
+
+![Membership Modal](<img width="1125" height="632" alt="image" src="https://github.com/user-attachments/assets/b832a374-0eae-4207-9802-5eb94037ef14" />)
+
+### Information
+![Information](<img width="1122" height="630" alt="image" src="https://github.com/user-attachments/assets/d22643c1-bada-4eac-bfad-bc1eac02918d" />)
+
+
 
